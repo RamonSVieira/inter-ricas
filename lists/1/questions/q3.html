@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+<body>
+    <button type="button" onclick="inputNumber()">Clique aqui</button>
+    <p id="number"></p>
+
+    <hr>
+    <a href="../index.html">Voltar</a>
+
+    <script>
+        function inputNumber() {
+            const number = prompt('Digite um número: ')
+
+            if (number) {
+                document.getElementById('number').innerHTML = `${number * 2}`;
+                console.log(number/2);
+            }
+        }
+    </script>
+</body>
+</html>
